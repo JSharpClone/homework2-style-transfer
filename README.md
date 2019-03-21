@@ -8,7 +8,7 @@ Team #15
 ```
 ## MUNIT
 
-MUNIT[^1] 對於 UNIT[^2] 做出了改進。UNIT 設計為解決未 1-to-1 的 domain 轉換。而 MUNIT 可以做 1-to-many 的轉換。有別於傳統的 GAN，這兩個方法都不需要準備好 **成對** 的 images，只需各個 domain 的一些圖片，這大大地降低了圖片收集的成本。
+MUNIT 對於 UNIT 做出了改進。UNIT 設計為解決未 1-to-1 的 domain 轉換。而 MUNIT 可以做 1-to-many 的轉換。有別於傳統的 GAN，這兩個方法都不需要準備好 **成對** 的 images，只需各個 domain 的一些圖片，這大大地降低了圖片收集的成本。
 
 ### Intuition
 
@@ -296,7 +296,3 @@ MUNIT 相較於其他方法的優勢在於他是一對多的。同一個 model�
 
 在 neural style 的實驗中，我們有應用在 PUBG 的影片上，在第一個場景上的效果相當不錯；而第二個場景會有閃爍的現象，因為我們是做在每一個 frame 上，而 style transfer 的效果有機會作用在不同的位置而導致。
 
-
-## Reference
-[^1]: Xun Huang, Ming-Yu Liu, Serge Belongie, Jan Kautz: Multimodal Unsupervised Image-to-Image Translation https://arxiv.org/abs/1804.04732
-[^2]: Ming-Yu Liu, Thomas Breuel, Jan Kautz: Unsupervised Image-to-Image Translation Networks https://arxiv.org/abs/1703.00848
